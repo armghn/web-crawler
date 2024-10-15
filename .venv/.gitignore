@@ -1,0 +1,60 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# C extensions
+*.so
+
+# Virtual environment directories
+venv/
+env/
+.virtualenv/
+.Python
+
+# Pip and other package manager files
+*.egg-info/
+.eggs/
+*.egg
+*.whl
+
+# Logs and temporary files
+*.log
+*.tmp
+*.bak
+*.swp
+*.swo
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+
+# Crawl data and results (you may want to change these directories based on your setup)
+scraped_data/
+output_data/
+response.txt
+
+# Ignore CSV files (if storing crawled data as CSV)
+*.csv
+
+# Cache directories (for caching requests or other data)
+.cache/
+__pycache__/
+
+# Jupyter Notebooks checkpoints
+.ipynb_checkpoints
+
+# Environment variable files (contains sensitive data like API keys, etc.)
+.env
+.env.*
+
+# IDE and Editor specific files
+.vscode/
+.idea/
+
+# SQLite database (if using it for crawling storage)
+*.sqlite3
+
+# Logs and debugging output
+debug.log
