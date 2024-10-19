@@ -6,11 +6,7 @@ from bs4 import BeautifulSoup
 
 def get_request(url):
     response = requests.get(url)
-    if response.status_code == 200:
-        return response.text
-
-    print(f"Failed to retrieve page. Status code: {response.status_code}")
-    return None
+    return (response.status_code, response.text)
 
 
 def extract_link(html):
@@ -33,7 +29,7 @@ def save_link_to_csv(links):
 
 def scrape_links(page_url):
     html_content = get_request(page_url)
-    links = extract_link(html_content)
+    links = extract_link(html_content[1])
     save_link_to_csv(links)
 
 
